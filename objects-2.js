@@ -38,7 +38,7 @@ function startCombat() {
 		console.warn(`You have chosen ${battleChar.name} and they have ${battleChar.health} health`);
 	}
 	pickMe();
-
+	// can't figure out how to keep the loop going after a character has died I feel like I'm on the right track.
 	while (opponent.health > 0 && character.every(x => x <= 0) === false) {
 		let battleDamage = Math.floor(Math.random() * 5 + 1);
 
