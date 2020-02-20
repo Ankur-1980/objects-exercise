@@ -19,7 +19,7 @@ nameList(opponent);
 function startCombat() {
 	function pickMe() {
 		let choose = prompt(
-			`Choose a wizard to battle Morgana\nChoose between Gandalf [1], Dumbledore [2] or Merlin [3]`
+			`Choose a wizard to battle Morgana\nChoose between \n${character[0].name} [1], \n${character[1].name} [2] or \n${character[2].name} [3]`
 		);
 
 		choose = Number(choose);
@@ -28,6 +28,7 @@ function startCombat() {
 		// 	pickMe();
 		// }
 		battleChar = character[choose - 1];
+		console.log(`You have chosen ${battleChar.name} and they have ${battleChar.health} health`);
 	}
 	pickMe();
 
