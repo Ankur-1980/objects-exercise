@@ -16,7 +16,7 @@ const nameList = (...names) => {
 // display list of all combatants
 nameList(...character);
 nameList(opponent);
-
+let battleChar;
 // declare function
 function startCombat() {
 	function pickMe() {
@@ -29,7 +29,7 @@ function startCombat() {
 		);
 
 		// If the user leaves the prompt blank or enters a number too large
-		if (choose === '' || choose > character.length) {
+		if (choose === '' || choose > 3 || choose < 1) {
 			pickMe();
 		} else if (choose === 0) {
 			alert(`Run away cowards`);
