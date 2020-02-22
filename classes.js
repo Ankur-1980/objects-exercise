@@ -28,6 +28,7 @@ class bankAccount extends Person {
 	// Greeting
 	greeting() {
 		return (
+			// uses the greeting from the Person class and adds to it for the bankAccount class
 			super.greeting() +
 			`\nWelcome to the Bank of Grand Chirpus\n Your starting balance is $${
 				this.balance
@@ -58,10 +59,12 @@ class bankAccountWithFee extends bankAccount {
 
 	// method - applyFee - subtracts from the balance
 	applyFee() {
+		// uses the addInterest forumalu from the bankAccount Class
 		return super.addInterest() - this.fee;
 	}
 
 	greeting() {
+		// adds onto the greeting from the bankAccount class
 		return super.greeting() + `\nThere is a minimum monthly fee of ${this.fee}`;
 	}
 }
