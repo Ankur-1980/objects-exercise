@@ -69,7 +69,13 @@ class bankAccountWithFee extends bankAccount {
 }
 
 // create a bankAccountWithFee
-// const janna = new bankAccountWithFee('Janna', 'Lodwick', 1000, 0.1, 5);
-// const chelsea = new bankAccountWithFee('Chelsea', 'Wylie', 400, 0.04, 5);
+const janna = new bankAccountWithFee('Janna', 'Lodwick', 1000, 0.1, 5);
+const chelsea = new bankAccountWithFee('Chelsea', 'Wylie', 400, 0.04, 5);
+// console.log(janna);
+// console.log(chelsea);
+// console.log(janna.addInterest());
+// console.log(chelsea.addInterest());
+// console.log(janna.applyFee());
+// console.log(chelsea.applyFee());
 // console.log(janna.greeting());
 // console.log(chelsea.greeting());
