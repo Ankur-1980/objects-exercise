@@ -22,9 +22,11 @@ let classList = [
 // }
 // console.log(room);
 
-let bank = 100;
-while (bank < 4000) {
-	let sideGig = 100 + Math.floor(Math.random() * 50 + 250);
-	bank += sideGig;
-	console.log(`$${bank}`);
-}
+// let bank = 100;
+// while (bank < 4000) {
+// 	let sideGig = 100 + Math.floor(Math.random() * 50 + 250);
+// 	bank += sideGig;
+// 	console.log(`$${bank}`);
+// }
+
+class = 
