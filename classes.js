@@ -68,20 +68,6 @@ class bankAccountWithFee extends bankAccount {
 
 // create a bankAccountWithFee
 // const janna = new bankAccountWithFee('Janna', 'Lodwick', 1000, 0.1, 5);
-// // const chelsea = new bankAccountWithFee('Chelsea', 'Wylie', 400, 0.04, 5);
+// const chelsea = new bankAccountWithFee('Chelsea', 'Wylie', 400, 0.04, 5);
 // console.log(janna.greeting());
 // console.log(chelsea.greeting());
-
-const str2obj = str => {
-	return str
-		.split(',')
-		.map(keyVal => {
-			return keyVal.split(':').map(_ => _.trim());
-		})
-		.reduce((accumulator, currentValue) => {
-			accumulator[currentValue[0]] = currentValue[1];
-			return accumulator;
-		}, {});
-};
-
-console.log(str2obj('foo: 1, bar: 2')); // see? works!
