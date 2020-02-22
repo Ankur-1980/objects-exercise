@@ -28,26 +28,25 @@ class bankAccount extends Person {
 	// Greeting
 	greeting() {
 		return (
-			// uses the greeting from the Person class and adds to it for the bankAccount class
+			// uses the greeting from the Person class and adds to it the bankAccount class
 			super.greeting() +
 			`\nWelcome to the Bank of Grand Chirpus\n Your starting balance is $${
 				this.balance
-			}.\nYou have a monthly interest rate of ${this.interestRate}%\nYour balance after one month is $${this
-				.balance *
-				this.interestRate +
-				this.balance}`
+			}.\nYou have a monthly interest rate of ${
+				this.interestRate
+			}%\nYour balance after one month is $${this.addInterest()}`
 		);
 	}
 }
 
 // create bankAccount
-// const grace = new bankAccount('Grace', 'Mullins', 500, 0.05);
+const grace = new bankAccount('Grace', 'Mullins', 500, 0.05);
 // check to see if everything was created properly for the bankAccount
 // console.log(grace);
 // check if add interest works
 // console.log(grace.addInterest());
 //
-// console.log(grace.greeting());
+console.log(grace.greeting());
 
 // create subclass - bankAccountWithFee
 class bankAccountWithFee extends bankAccount {
