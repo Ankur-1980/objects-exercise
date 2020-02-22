@@ -40,13 +40,13 @@ class bankAccount extends Person {
 }
 
 // create bankAccount
-const grace = new bankAccount('Grace', 'Mullins', 500, 0.05);
+// const grace = new bankAccount('Grace', 'Mullins', 500, 0.05);
 // check to see if everything was created properly for the bankAccount
 // console.log(grace);
 // check if add interest works
 // console.log(grace.addInterest());
 //
-console.log(grace.greeting());
+// console.log(grace.greeting());
 
 // create subclass - bankAccountWithFee
 class bankAccountWithFee extends bankAccount {
