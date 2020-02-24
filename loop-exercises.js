@@ -102,32 +102,32 @@
 // 	{ name: 'Divya', grade: 88 },
 // 	{ name: 'Ishitha', grade: 95 },
 // 	{ name: 'Thomas', grade: 68 },
-// ];
+// // ];
 
-function classGrade() {
-	console.log(`Number of Students: ${classRoom.length}`);
-	// prev & cur are place holders.
-	// prev is the last number added
-	// cur is the current value in the array
-	let sum = classRoom.reduce(function(prev, cur) {
-		// cur.grade looks for grade at the current index
-		return prev + cur.grade;
-	}, 0);
-	let average = sum / classRoom.length;
-	if (average < 100 && average >= 90) {
-		console.log(`Average grade is ${average}\n
-		Letter Grade: A`);
-	} else if (average < 90 && average >= 80) {
-		console.log(`Average grade is ${average}\n
-		Letter Grade: B`);
-	} else if (average < 80 && average >= 70) {
-		console.log(`Average grade is ${average}\n
-		Letter Grade: C`);
-	} else if (average < 70 && average >= 60) {
-		console.log(`Average grade is ${average}\n
-		Letter Grade: D`);
-	} else
-		console.log(`Average grade is ${average}\n
-	Letter Grade: F`);
-}
-classGrade();
+// function classGrade() {
+// 	console.log(`Number of Students: ${classRoom.length}`);
+// 	// prev & cur are place holders.
+// 	// prev is the last number added
+// 	// cur is the current value in the array
+// 	let sum = classRoom.reduce(function(prev, cur) {
+// 		// cur.grade looks for grade at the current index
+// 		return prev + cur.grade;
+// 	}, 0);
+// 	let average = sum / classRoom.length;
+// 	if (average < 100 && average >= 90) {
+// 		console.log(`Average grade is ${average}\n
+// 		Letter Grade: A`);
+// 	} else if (average < 90 && average >= 80) {
+// 		console.log(`Average grade is ${average}\n
+// 		Letter Grade: B`);
+// 	} else if (average < 80 && average >= 70) {
+// 		console.log(`Average grade is ${average}\n
+// 		Letter Grade: C`);
+// 	} else if (average < 70 && average >= 60) {
+// 		console.log(`Average grade is ${average}\n
+// 		Letter Grade: D`);
+// 	} else
+// 		console.log(`Average grade is ${average}\n
+// 	Letter Grade: F`);
+// }
+// classGrade();
