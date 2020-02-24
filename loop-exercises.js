@@ -96,30 +96,21 @@
 // Ishitha               95
 // Thomas             68
 
-let classRoom = [
-	{ name: 'David', grade: 80 },
-	{ name: 'Vinoth', grade: 77 },
-	{ name: 'Divya', grade: 88 },
-	{ name: 'Ishitha', grade: 95 },
-	{ name: 'Thomas', grade: 68 },
-];
-
-// function classAverage() {
-// 	// number of students in the class
-// 	console.log(classRoom.length);
-// 	// total of all their grades
-// 	let sum = classRoom.reduce(function(prev, cur) {
-// 		return prev + cur.grade;
-// 	}, 0);
-// 	console.log(sum);
-// 	let average = sum / classRoom.length;
-// 	console.log(`Number of students: ${classRoom.length}\nTotal score ${sum}\nAverage is ${average}`);
-// }
-// classAverage();
+// let classRoom = [
+// 	{ name: 'David', grade: 80 },
+// 	{ name: 'Vinoth', grade: 77 },
+// 	{ name: 'Divya', grade: 88 },
+// 	{ name: 'Ishitha', grade: 95 },
+// 	{ name: 'Thomas', grade: 68 },
+// ];
 
 function classGrade() {
 	console.log(`Number of Students: ${classRoom.length}`);
+	// prev & cur are place holders.
+	// prev is the last number added
+	// cur is the current value in the array
 	let sum = classRoom.reduce(function(prev, cur) {
+		// cur.grade looks for grade at the current index
 		return prev + cur.grade;
 	}, 0);
 	let average = sum / classRoom.length;
@@ -140,6 +131,3 @@ function classGrade() {
 	Letter Grade: F`);
 }
 classGrade();
-// var msgTotal = accounts.reduce(function(prev, cur) {
-// 	return prev + cur.msgCount;
-// }, 0);
